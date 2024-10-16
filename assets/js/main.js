@@ -183,3 +183,14 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+
+document.getElementById('showTextBtn').addEventListener('click', function() {
+  var textContainer = document.getElementById('textContainer');
+  textContainer.style.display = 'block';
+  textContainer.textContent = 'Here is the text with a green background!';
+});
+
+function newsSub(){
+  alert("Thankyou for submitting our news letter :)");
+  window.location.reload();
+}
